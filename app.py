@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-# === Load Model and Version Info from Pickle ===
+# === Load Model and Version Info from Pickle =====
 with open("bigmart_best_model.pkl", "rb") as f:
     model, sklearn_version = pickle.load(f)
 
@@ -13,9 +13,9 @@ st.set_page_config(
     layout="wide",
 )
 
-# === Sidebar (Developer Info) ===
+# === Sidebar (Developer Info) =====
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/2331/2331944.png", width=120)  # finance icon
+    st.image("https://cdn-icons-png.flaticon.com/512/2331/2331944.png", width=120)  # finance icon-----
     st.markdown(
         """
         <h2 style='text-align:center; color:#1E90FF;'>📊 Developer Info</h2>
