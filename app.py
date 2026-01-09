@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-# === Load Model and Version Info from Pickle =====
+# === Load Model and Version Info from Pickle ======
 with open("bigmart_best_model.pkl", "rb") as f:
     model, sklearn_version = pickle.load(f)
 
-# === Page Configuration ===
+# === Page Configuration ====
 st.set_page_config(
     page_title="BigMart Sales Prediction App",
     page_icon="💰",
