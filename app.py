@@ -39,14 +39,14 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-# === Main App Header ===
+# === Main App Header =====
 st.title("💼 BigMart Sales Prediction App")
 st.markdown(
     f"<p style='color:gray;'>Powered by <b>scikit-learn v{sklearn_version}</b> | Predicting retail sales with precision 📈</p>",
     unsafe_allow_html=True
 )
 
-# === Input Form ===
+# === Input Form =====
 st.markdown("---")
 st.header("🧾 Enter Product & Outlet Details")
 
@@ -78,7 +78,7 @@ with col2:
     ])
     Outlet_Age = st.slider("Outlet Age (Years)", 0, 40, 15)
 
-# === Predict Button ===
+# === Predict Button =====
 st.markdown("---")
 if st.button("🚀 Predict Sales", use_container_width=True):
     input_df = pd.DataFrame([{
